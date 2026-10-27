@@ -1,4 +1,48 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+/* Actualización visual OES Perú · diseño elegante y adaptable */
+:root{--bg:#fcfaf8;--ink:#252427;--muted:#615e61;--line:#ebe3e1;--cochinilla:#981a24;--indigo:#33383e;--ocre:#c28b62;--display:Georgia,"Times New Roman",serif}
+body{letter-spacing:-.008em}
+.wrap{max-width:1160px;padding-inline:clamp(20px,4vw,48px)}
+header{background:var(--surface);box-shadow:0 3px 26px rgba(30,20,22,.045)}
+.bar{padding-block:11px}
+.brand{gap:12px}
+.brand-logo{width:49px;height:49px;object-fit:contain;flex:none}
+.brand span{font-family:var(--body);font-size:15px;font-weight:700;line-height:1.25;letter-spacing:-.025em}
+nav .links a{font-size:14px;font-weight:600}
+.hero{grid-template-columns:minmax(0,1.25fr) minmax(280px,.8fr);align-items:center;gap:clamp(28px,5vw,72px);padding-block:90px 85px}
+.hero h1{font-size:clamp(39px,5.1vw,64px);letter-spacing:-.04em;line-height:1.12}
+.hero .lead{font-size:18px;line-height:1.65}
+.btn{border-radius:999px;padding:13px 23px;transition:transform .18s,box-shadow .18s,background .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 22px rgba(103,25,33,.12)}
+.hero-side{display:grid;justify-items:center;gap:22px}
+.hero-logo-frame{width:min(100%,390px);border:1px solid var(--line);background:#fff;border-radius:24px;box-shadow:0 20px 55px rgba(44,35,37,.08);padding:14px;overflow:hidden}
+.hero-logo{display:block;width:100%;height:auto}
+.facts{width:100%;border-left:0;padding:18px 0 0;border-top:1px solid var(--line);grid-template-columns:1fr 1fr;gap:13px 18px}
+.facts strong{font-family:var(--body);font-weight:700;font-size:16px}
+.facts .label{font-size:10px}
+section{padding-block:82px}
+.head h2{letter-spacing:-.025em}
+.disc{gap:14px;background:transparent;border:0;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.disc li{border:1px solid var(--line);border-radius:14px;padding:25px;transition:transform .18s,box-shadow .18s}
+.disc li:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(40,23,26,.065)}
+.acts>div{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--cochinilla);padding:24px;border-radius:0 0 14px 14px}
+.card{border-radius:16px;box-shadow:0 10px 40px rgba(30,20,22,.05)}
+.band{height:12px;background-image:none;background:linear-gradient(90deg,#981a24 0%,#981a24 38%,#303136 38%,#303136 62%,#981a24 62%)}
+@media(max-width:820px){
+ .bar{flex-wrap:wrap;gap:12px}.brand span{font-size:14px}
+ nav{width:100%;justify-content:space-between;gap:12px;overflow-x:auto}
+ nav .links{display:flex;gap:15px;white-space:nowrap}
+ nav .links a{font-size:12px}.lang{flex:none}
+ .hero{grid-template-columns:1fr;padding-block:45px 52px;gap:32px}
+ .hero-side{max-width:460px;width:100%;margin-inline:auto}
+ .hero-logo-frame{max-width:310px}.facts{grid-template-columns:repeat(2,minmax(0,1fr));padding-top:18px}
+ section{padding-block:56px}
+}
+@media(max-width:440px){nav{align-items:flex-start}nav .links{flex-wrap:wrap;gap:6px 14px;white-space:normal}nav .links a{font-size:12px}.hero h1{font-size:38px}}
+</style><meta name="theme-color" content="#981a24">
+<meta name="description" content="Observatorio Económico y Social – Perú. Investigación, diálogo y proyectos solidarios entre Perú, América Latina y Francia.">
+<link rel="icon" href="simbolo-oes-peru.png" type="image/png">
+</head><body>
 <title>Observatorio Económico y Social – Perú</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -118,10 +162,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <header>
   <div class="wrap bar">
     <a class="brand" href="#inicio">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
-        <path d="M13 1h8v6h6v6h6v8h-6v6h-6v6h-8v-6H7v-6H1v-8h6V7h6z" fill="var(--cochinilla)"/>
-        <rect x="13" y="13" width="8" height="8" fill="var(--bg)"/>
-      </svg>
+      <img class="brand-logo" src="simbolo-oes-peru.png" alt="Símbolo OES Perú" width="48" height="48">
       <span>Observatorio Económico<br>y Social – Perú</span>
     </a>
     <nav aria-label="Menu">
@@ -156,11 +197,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <a class="btn ghost" href="#nosotros"><span lang="es">Conocer el Observatorio</span><span lang="fr">Découvrir l’Observatoire</span></a>
       </div>
     </div>
-    <div class="facts">
+    <div class="hero-side">
+      <div class="hero-logo-frame"><img class="hero-logo" src="logo-oes-peru.png" alt="OES Perú — Observatorio Económico y Social"></div>
+      <div class="facts">
       <div><span class="label"><span lang="es">Fundado</span><span lang="fr">Fondé</span></span><strong>2013</strong></div>
       <div><span class="label"><span lang="es">Sede</span><span lang="fr">Siège</span></span><strong>Paris 19<sup>e</sup></strong></div>
       <div><span class="label"><span lang="es">Disciplinas</span><span lang="fr">Disciplines</span></span><strong>7+</strong></div>
       <div><span class="label"><span lang="es">Enfoque</span><span lang="fr">Approche</span></span><strong><span lang="es">Pluridisciplinario</span><span lang="fr">Pluridisciplinaire</span></strong></div>
+      </div>
     </div>
   </div>
   <div class="band" aria-hidden="true"></div>
